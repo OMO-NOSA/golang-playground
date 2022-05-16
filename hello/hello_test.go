@@ -1,4 +1,4 @@
-package integers
+package hello
 
 import "testing"
 

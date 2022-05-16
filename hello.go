@@ -1,4 +1,4 @@
-package main
+package integers
 
 import "fmt"
 
@@ -28,6 +28,12 @@ func greetingPrefix(language string) (prefix string){
 	return
 }
 
+func Add(x, y int) int {
+
+	return x + y
+}
+
 func main() {
 	fmt.Println(Hello("Nosa", "Germany"))
+	fmt.Println(Add(55,6))
 }

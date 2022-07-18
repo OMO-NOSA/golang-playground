@@ -15,3 +15,18 @@ func Sum(numbers[] int) int {
 	return sum
 }
 
+/*
+- make allows to create a slice with a starting capacity of the len of the numbersToSum
+
+*/
+
+func SumAll(numbersToSum ...[]int) (sum []int) {
+	lengthOfNumbers := len(numbersToSum)
+	sums := make([]int, lengthOfNumbers)
+
+	for i, numbers := range numbersToSum {
+		sums[i] = Sum(numbers)
+	}
+
+	return sums
+}

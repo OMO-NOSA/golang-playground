@@ -1,3 +1,3 @@
-module hello
+module playground
 
 go 1.18

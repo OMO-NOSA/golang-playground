@@ -3,8 +3,8 @@ package structinterface
 import "math"
 
 type Rectangle struct {
-	width  float64
-	height float64
+	Width  float64
+	Height float64
 }
 
 type Circle struct {
@@ -21,11 +21,11 @@ type Shape interface {
 }
 
 func Perimeter(r Rectangle) float64 {
-	return 2 * (r.width + r.height)
+	return 2 * (r.Width + r.Height)
 }
 
 func (r Rectangle) Area() float64 {
-	return r.width * r.height
+	return r.Width * r.Height
 }
 
 func (c Circle) Area() float64 {
